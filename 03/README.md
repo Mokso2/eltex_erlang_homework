@@ -1,4 +1,5 @@
 3> converter:to_rub({usd,100}).
+
 Convert usd to rub, amount 100
 {ok,7550.0}
 4> converter:to_rub({peso,12}).
