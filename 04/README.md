@@ -18,8 +18,8 @@ Can’t convert to rub, error {conv_info,euro,-15,0.02}
 {ok,35.28}  
 39> converter: map_to_rub(#{type => yene, amount => 30, commission => 0.02}).  
 Can’t convert to rub, error #{amount => 30,commission => 0.02,type => yene}   
-{error,badarg}  
-40> converter: map_to_rub(#{type => euro, amount => -15, commission => 0.02}).  
+{error,badarg}   
+40> converter: map_to_rub(#{type => euro, amount => -15, commission => 0.02}).    
 Can’t convert to rub, error #{amount => -15,commission => 0.02,type => euro}  
 {error,badarg}   
 3> c(recursion).  
