@@ -74,6 +74,5 @@ Action #Fun<erl_eval.21.126501267> failed, reason runtime_exception
 error      
    
 
-
-
+Вывод: В ходе выполнения работы я изучил и попробовал на практике функции работы со списками (filter, all, any, update, foldl, seq), а так же изучил способ обработки ошибок.
 
