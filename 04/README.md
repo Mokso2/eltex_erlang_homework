@@ -1,26 +1,26 @@
 31> rr("conv_info.hrl").  
 [conv_info] 
-32> c(converter). 
-{ok,converter} 
-33> converter:rec_to_rub(#conv_info{type = usd, amount = 100, commission = 0.01}).
-{ok,7474.5}
-34> converter:rec_to_rub(#conv_info{type = peso, amount = 12, commission = 0.02}).
-{ok,35.28}
-35> converter:rec_to_rub(#conv_info{type = yene, amount = 30, commission = 0.02}).
-Can’t convert to rub, error {conv_info,yene,30,0.02}
-{error,badarg}
-36> converter:rec_to_rub(#conv_info{type = euro, amount = -15, commission = 0.02}).
-Can’t convert to rub, error {conv_info,euro,-15,0.02}
-{error,badarg}
-37> converter: map_to_rub(#{type => usd, amount => 100, commission => 0.01}).
-{ok,7474.5}
-38> converter: map_to_rub(#{type => peso, amount => 12, commission => 0.02}).
-{ok,35.28}
-39> converter: map_to_rub(#{type => yene, amount => 30, commission => 0.02}).
-Can’t convert to rub, error #{amount => 30,commission => 0.02,type => yene}
-{error,badarg}
-40> converter: map_to_rub(#{type => euro, amount => -15, commission => 0.02}).
-Can’t convert to rub, error #{amount => -15,commission => 0.02,type => euro}
+32> c(converter).  
+{ok,converter}   
+33> converter:rec_to_rub(#conv_info{type = usd, amount = 100, commission = 0.01}).   
+{ok,7474.5}  
+34> converter:rec_to_rub(#conv_info{type = peso, amount = 12, commission = 0.02}).  
+{ok,35.28}  
+35> converter:rec_to_rub(#conv_info{type = yene, amount = 30, commission = 0.02}).  
+Can’t convert to rub, error {conv_info,yene,30,0.02}  
+{error,badarg}  
+36> converter:rec_to_rub(#conv_info{type = euro, amount = -15, commission = 0.02}).  
+Can’t convert to rub, error {conv_info,euro,-15,0.02}  
+{error,badarg}  
+37> converter: map_to_rub(#{type => usd, amount => 100, commission => 0.01}).  
+{ok,7474.5}  
+38> converter: map_to_rub(#{type => peso, amount => 12, commission => 0.02}).  
+{ok,35.28}  
+39> converter: map_to_rub(#{type => yene, amount => 30, commission => 0.02}).  
+Can’t convert to rub, error #{amount => 30,commission => 0.02,type => yene}  
+{error,badarg}  
+40> converter: map_to_rub(#{type => euro, amount => -15, commission => 0.02}).  
+Can’t convert to rub, error #{amount => -15,commission => 0.02,type => euro}  
 {error,badarg}
 3> c(recursion).
 {ok,recursion}
