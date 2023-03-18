@@ -1,6 +1,5 @@
 
 -module(exceptions).
--author("79513").
 
 
 -export([catch_all/1]).

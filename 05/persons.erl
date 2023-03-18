@@ -1,6 +1,6 @@
 
 -module(persons).
--author("79513").
+
 -include("person.hrl").
 
 -export([filter/2, all/2, any/2, update/2, get_average_age/1]).
