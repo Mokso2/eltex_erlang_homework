@@ -1,7 +1,7 @@
-31> rr("conv_info.hrl").
-[conv_info]
-32> c(converter).
-{ok,converter}
+31> rr("conv_info.hrl").  
+[conv_info] 
+32> c(converter). 
+{ok,converter} 
 33> converter:rec_to_rub(#conv_info{type = usd, amount = 100, commission = 0.01}).
 {ok,7474.5}
 34> converter:rec_to_rub(#conv_info{type = peso, amount = 12, commission = 0.02}).
